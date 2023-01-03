@@ -9,10 +9,10 @@ import { publicProvider } from 'wagmi/providers/public'
 //     publicProvider(),
 //   ],
 // )
-
+const MODE = 'development'
 
 const { chains, provider, webSocketProvider } = configureChains(
-  [mainnet, ...(true === 'development' ? [goerli] : [])],
+  [mainnet, ...(MODE === 'development' ? [goerli] : [])],
   [
     publicProvider(),
   ],
