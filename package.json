@@ -2,7 +2,10 @@
   "name": "wagmi-rainbowkit",
   "version": "0.0.1",
   "private": true,
+  "homepage": "https://smarthug.github.io/wagmi-rainbowkit",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview"
@@ -11,6 +14,7 @@
     "@rainbow-me/rainbowkit": "^0.8.1",
     "buffer": "^6.0.3",
     "ethers": "^5.7.2",
+    "gh-pages": "^4.0.0",
     "process": "^0.11.10",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
